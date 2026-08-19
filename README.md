@@ -103,10 +103,20 @@ separately:
 - Software DOI: `10.5281/zenodo.21892421`
 - Technical report DOI: `10.5281/zenodo.21898684`
 
-Repository-specific citation metadata are provided in `CITATION.cff`. A DOI for
-this analysis repository can be added there after the GitHub release is
-archived by Zenodo.
+Repository-specific citation metadata are provided in `CITATION.cff`. 
 
 ## License
 
 BSD 3-Clause License. See `LICENSE`.
+
+## Citation
+
+The reproducible analysis software and reference results are archived on Zenodo:
+
+- Analysis repository DOI: `10.5281/zenodo.22012996`
+- RPDindexOptimized software DOI: `10.5281/zenodo.21892421`
+- RPDindexOptimized technical report DOI: `10.5281/zenodo.21898684`
+
+Repository-specific citation metadata are provided in `CITATION.cff`.
+
+
