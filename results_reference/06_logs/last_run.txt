@@ -1,0 +1,3 @@
+log=<PROJECT_ROOT>/04_results/06_logs/run_20260812_100327.log
+input=<PROJECT_ROOT>/02_raw_data/PM_train.csv
+output=<PROJECT_ROOT>/04_results/01_indices/PM_train_RPD_progressive.csv.gz

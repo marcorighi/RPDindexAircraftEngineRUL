@@ -1,0 +1,25 @@
+{
+  "computeindex_file": "03_code/computeindex_optimized.py",
+  "computeindex_sha256": "00d507708e3ae0d6653e8d291f271bf3d317f28b18d7dcd309fd79711c64195d",
+  "elapsed_seconds": 52.365,
+  "endpoint_output": "04_results/05_tables/PM_train_RPD_endpoint_by_engine_sensor.csv",
+  "indices": [
+    "RPDlep",
+    "RPDlea",
+    "RPDlepr",
+    "RPDgep",
+    "RPDgea",
+    "RPDgepr"
+  ],
+  "input_file": "02_raw_data/PM_train.csv",
+  "input_sha256": "12250a097c5d11fda027d0e025d91619c4fff1d93d482341ab456e8ad83368d0",
+  "legacy_by_engine_output": "04_results/01_indices/by_engine",
+  "long_output": "04_results/01_indices/PM_train_RPD_progressive.csv.gz",
+  "n_engines": 100,
+  "n_rows": 20631,
+  "n_sensors": 21,
+  "progressive_definition": "For each engine/sensor, values are computed on prefixes x[0:2], ..., x[0:T].",
+  "rul_train_definition": "RUL = final_cycle_of_engine - current_cycle; final training cycle has RUL=0.",
+  "software_doi": "10.5281/zenodo.21892421",
+  "technical_report_doi": "10.5281/zenodo.21898684"
+}

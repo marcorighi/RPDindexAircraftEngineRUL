@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or analysis pipeline, please cite this repository and the associated publication."
+title: "RPDindex-Based Aircraft-Engine RUL Analysis"
+type: software
+authors:
+  - family-names: "Righi"
+    given-names: "Marco"
+    affiliation: "Institute of Clinical Physiology, National Research Council of Italy (CNR-IFC), Massa, Italy; Department of Computer Science, University of Pisa, Pisa, Italy"
+version: 1.0.0
+license: BSD-3-Clause
+abstract: >-
+  Reproducible Python analysis pipeline for evaluating RPDindex-based local and
+  global degradation indicators and their use in remaining useful life (RUL)
+  prediction for aircraft engines using the C-MAPSS-derived Predictive
+  Maintenance Aircraft Engine dataset. The repository includes data integrity
+  checks, RPD trajectory computation, statistical validation, RUL model
+  training and validation, blind test prediction, evaluation, and manuscript
+  figure generation.
+keywords:
+  - "RPDindex"
+  - "remaining useful life"
+  - "RUL prediction"
+  - "predictive maintenance"
+  - "aircraft engines"
+  - "C-MAPSS"
+  - "degradation indicators"
+  - "reliability engineering"
+  - "prognostics"

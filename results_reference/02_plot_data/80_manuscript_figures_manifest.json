@@ -1,0 +1,38 @@
+{
+  "independent_test_metrics_recomputed_from_figure_input": {
+    "mae": 16.958609832014687,
+    "r2": 0.696799267416952,
+    "rmse": 22.882048155604316,
+    "worst_engine": 39,
+    "worst_error": 71.20275292926729
+  },
+  "inputs": {
+    "14_RPD_temporal_shuffle_dataset_level.csv": {
+      "path": "04_results/05_tables/14_RPD_temporal_shuffle_dataset_level.csv",
+      "sha256": "ffab9ed1aebb0cf860ccec329cc6fb322ff105dde3f3325c1c5ccdc85e96ddbb"
+    },
+    "16_RUL_groupcv_engine_metrics.csv": {
+      "path": "04_results/05_tables/16_RUL_groupcv_engine_metrics.csv",
+      "sha256": "b15edb4ae949cab8d7d88544919b6174ed1f58dbe8c27c02b9330f85f74412cb"
+    },
+    "27_PM_test_RUL_evaluation_by_engine.csv": {
+      "path": "04_results/05_tables/27_PM_test_RUL_evaluation_by_engine.csv",
+      "sha256": "1ff414dd960c258a720b357c73b2f3047fd846bb3ca9e95966d6a8a4992ee899"
+    }
+  },
+  "outputs": {
+    "figure_2": {
+      "pdf": "04_results/03_figures/fig_temporal_shuffle_validation.pdf",
+      "png": "04_results/04_figures_hires/fig_temporal_shuffle_validation.png"
+    },
+    "figure_3": {
+      "pdf": "04_results/03_figures/fig_groupcv_engine_rmse.pdf",
+      "png": "04_results/04_figures_hires/fig_groupcv_engine_rmse.png"
+    },
+    "figure_4": {
+      "pdf": "04_results/03_figures/fig_independent_test_rul.pdf",
+      "png": "04_results/04_figures_hires/fig_independent_test_rul.png"
+    }
+  },
+  "script": "85_create_manuscript_figures.py"
+}

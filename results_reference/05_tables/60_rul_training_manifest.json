@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-08-12T09:58:24.739455+00:00",
+  "engine_count": 100,
+  "feature_sets": [
+    "rpd_global",
+    "raw_sensor",
+    "raw_plus_rpd"
+  ],
+  "folds": 5,
+  "global_indices": [
+    "RPDgep",
+    "RPDgea",
+    "RPDgepr"
+  ],
+  "grouping_unit": "engine id",
+  "horizons": [
+    20.0,
+    50.0,
+    100.0,
+    150.0
+  ],
+  "model_selection": "Lowest mean per-engine OOF RMSE; mean per-engine OOF MAE used as tie-breaker.",
+  "models": [
+    "ridge",
+    "hgb"
+  ],
+  "nasa_score_definition": "d=prediction-true; d<0: exp(-d/13)-1; d>=0: exp(d/10)-1",
+  "numpy_version": "2.5.1",
+  "operating_settings_included": true,
+  "outputs": {
+    "best_model": "04_results/07_models/RUL_best_model.joblib",
+    "best_model_metadata": "04_results/07_models/RUL_best_model_metadata.json",
+    "engine_metrics": "04_results/05_tables/16_RUL_groupcv_engine_metrics.csv",
+    "feature_sets": "04_results/05_tables/20_RUL_feature_sets.csv",
+    "fold_metrics": "04_results/05_tables/15_RUL_groupcv_fold_metrics.csv",
+    "horizon_metrics": "04_results/05_tables/19_RUL_horizon_metrics.csv",
+    "manifest": "04_results/05_tables/60_rul_training_manifest.json",
+    "predictions": "04_results/02_plot_data/60_RUL_groupcv_predictions.csv.gz",
+    "selection": "04_results/05_tables/18_RUL_model_selection.csv",
+    "summary": "04_results/05_tables/17_RUL_groupcv_summary.csv"
+  },
+  "pandas_version": "2.3.3",
+  "prediction_clip": [
+    0.0,
+    360.0
+  ],
+  "progressive_file": "04_results/01_indices/PM_train_RPD_progressive.csv.gz",
+  "progressive_sha256": "2dd15125b8908ea3e61448a6f41194f4e3f69ffc8b132d9456be340159a217a3",
+  "python_version": "3.14.6",
+  "raw_train_file": "02_raw_data/PM_train.csv",
+  "raw_train_sha256": "12250a097c5d11fda027d0e025d91619c4fff1d93d482341ab456e8ad83368d0",
+  "row_count": 20531,
+  "rul_cap": null,
+  "sample_weighting": "Each training engine has equal total regression weight.",
+  "scikit_learn_version": "1.9.0",
+  "script": "60_train_rul_model.py",
+  "selected_feature_set": "raw_plus_rpd",
+  "selected_model": "ridge",
+  "software_doi": "10.5281/zenodo.21892421",
+  "technical_report_doi": "10.5281/zenodo.21898684",
+  "test_set_used": false,
+  "truth_set_used": false
+}

@@ -1,0 +1,28 @@
+RPD C-MAPSS pipeline
+Project: <PROJECT_ROOT>
+Input:   <PROJECT_ROOT>/02_raw_data/PM_train.csv
+Results: <PROJECT_ROOT>/04_results
+
+[OK] computeindex_optimized.py passed deterministic and progressive/direct validation.
+[INFO] PM_train.csv: 20631 rows, 100 engines, 21 sensors
+[INFO] cycles/engine: min=128, mean=206.31, max=362
+[INFO] processed engine 1/100 (id=1, cycles=192)
+[INFO] processed engine 10/100 (id=10, cycles=222)
+[INFO] processed engine 20/100 (id=20, cycles=234)
+[INFO] processed engine 30/100 (id=30, cycles=194)
+[INFO] processed engine 40/100 (id=40, cycles=188)
+[INFO] processed engine 50/100 (id=50, cycles=198)
+[INFO] processed engine 60/100 (id=60, cycles=172)
+[INFO] processed engine 70/100 (id=70, cycles=137)
+[INFO] processed engine 80/100 (id=80, cycles=185)
+[INFO] processed engine 90/100 (id=90, cycles=154)
+[INFO] processed engine 100/100 (id=100, cycles=200)
+
+[OK] Progressive dataset: <PROJECT_ROOT>/04_results/01_indices/PM_train_RPD_progressive.csv.gz
+[OK] Per-engine index files: <PROJECT_ROOT>/04_results/01_indices/by_engine
+[OK] Endpoint summary: <PROJECT_ROOT>/04_results/05_tables/PM_train_RPD_endpoint_by_engine_sensor.csv
+[OK] Manifest: <PROJECT_ROOT>/04_results/01_indices/manifest.json
+[OK] elapsed: 52.4 s
+
+Done.
+Log: <PROJECT_ROOT>/04_results/06_logs/run_20260812_100327.log

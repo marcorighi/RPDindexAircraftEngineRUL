@@ -1,0 +1,70 @@
+{
+  "configuration_count": 6,
+  "configurations": [
+    {
+      "feature_set": "raw_plus_rpd",
+      "model": "hgb"
+    },
+    {
+      "feature_set": "raw_plus_rpd",
+      "model": "ridge"
+    },
+    {
+      "feature_set": "raw_sensor",
+      "model": "hgb"
+    },
+    {
+      "feature_set": "raw_sensor",
+      "model": "ridge"
+    },
+    {
+      "feature_set": "rpd_global",
+      "model": "hgb"
+    },
+    {
+      "feature_set": "rpd_global",
+      "model": "ridge"
+    }
+  ],
+  "created_utc": "2026-08-12T10:31:33.643642+00:00",
+  "engine_count": 100,
+  "model_tuning_performed": false,
+  "models_refit": false,
+  "nasa_score_definition": "d=predicted-true; d<0: exp(-d/13)-1; d>=0: exp(d/10)-1",
+  "numpy_version": "2.5.1",
+  "one_endpoint_per_engine_per_repeat": true,
+  "oof_predictions_file": "04_results/02_plot_data/60_RUL_groupcv_predictions.csv.gz",
+  "oof_predictions_sha256": "6838658c25f7ea021c4c1b6884fa16b7a72e3709471612a0f8d031ac2ccd7e85",
+  "original_training_manifest_sha256": "b0e669d02bc1949384612ca68cd9f45b42b0d37639e4c276cca56b5cd4a3344e",
+  "outputs": {
+    "engine_summary": "04_results/05_tables/23_RUL_endpoint_engine_summary.csv",
+    "manifest": "04_results/05_tables/65_endpoint_validation_manifest.json",
+    "pairwise": "04_results/05_tables/22_RUL_endpoint_pairwise.csv",
+    "range_check": "04_results/05_tables/25_RUL_endpoint_range_check.csv",
+    "rankings": "04_results/05_tables/24_RUL_endpoint_rankings.csv",
+    "repeat_metrics": "04_results/02_plot_data/65_RUL_endpoint_repeat_metrics.csv.gz",
+    "summary": "04_results/05_tables/21_RUL_endpoint_summary.csv"
+  },
+  "pandas_version": "2.3.3",
+  "public_reference_note": "Filesystem paths in the public JSON manifests were normalized after the scientific run. original_training_manifest_sha256 preserves the hash recorded during computation; public_reference_training_manifest_sha256 verifies the normalized public copy.",
+  "public_reference_training_manifest_sha256": "9bcc2556eb603d517bdde5cee748599becccbbe5f8151de8c6faee82b3a3fa2a",
+  "python_version": "3.14.6",
+  "rankings": {
+    "accuracy": "median RMSE, then median MAE",
+    "phm08": "median NASA score sum, then q95 NASA score sum, then median RMSE"
+  },
+  "repeats": 5000,
+  "same_endpoint_draws_for_all_configurations": true,
+  "sampled_max_rul": 120,
+  "sampled_min_rul": 20,
+  "sampling_distribution": "independent discrete uniform true RUL per engine and repeat",
+  "script": "65_validate_rul_endpoints.py",
+  "seed": 20260812,
+  "software_doi": "10.5281/zenodo.21892421",
+  "technical_report_doi": "10.5281/zenodo.21898684",
+  "test_set_used": false,
+  "training_manifest_path": "04_results/05_tables/60_rul_training_manifest.json",
+  "training_manifest_present": true,
+  "training_manifest_sha256": "b0e669d02bc1949384612ca68cd9f45b42b0d37639e4c276cca56b5cd4a3344e",
+  "truth_set_used": false
+}

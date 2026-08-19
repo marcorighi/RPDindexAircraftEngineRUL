@@ -1,0 +1,48 @@
+{
+  "base_seed": 20260812,
+  "computeindex_file": "03_code/computeindex_optimized.py",
+  "computeindex_sha256": "00d507708e3ae0d6653e8d291f271bf3d317f28b18d7dcd309fd79711c64195d",
+  "created_utc": "2026-08-12T09:36:57.844710+00:00",
+  "dataset_level_null_aggregation": "Median across informative sensors within engine, then median across engines for each permutation.",
+  "early_late_fraction": 0.2,
+  "engine_as_primary_inferential_unit": true,
+  "global_indices": [
+    "RPDgep",
+    "RPDgea",
+    "RPDgepr"
+  ],
+  "max_groups_debug_limit": 0,
+  "metrics_file": "04_results/05_tables/01_RPD_metrics_by_engine_sensor.csv",
+  "metrics_sha256": "6f593b2879d85b150498bccc6a325e37038a387f2d3f6274a8490389162cb80f",
+  "null_metrics": [
+    "abs_spearman_rul",
+    "abs_pearson_rul",
+    "monotonicity",
+    "abs_delta_late_early"
+  ],
+  "numpy_version": "2.5.1",
+  "outputs": {
+    "engine_level_metrics": "04_results/05_tables/08_RPD_engine_level_metrics.csv",
+    "engine_level_tests": "04_results/05_tables/09_RPD_engine_level_local_global_tests.csv",
+    "sensor_level_tests": "04_results/05_tables/10_RPD_sensor_level_local_global_tests.csv",
+    "temporal_shuffle_by_engine_sensor": "04_results/05_tables/12_RPD_temporal_shuffle_by_engine_sensor.csv",
+    "temporal_shuffle_dataset_level": "04_results/05_tables/14_RPD_temporal_shuffle_dataset_level.csv",
+    "temporal_shuffle_engine_aggregates": "04_results/05_tables/13_RPD_temporal_shuffle_engine_aggregates.csv.gz",
+    "temporal_shuffle_null": "04_results/05_tables/11_RPD_temporal_shuffle_null.csv.gz"
+  },
+  "pandas_version": "2.3.3",
+  "permutations": 999,
+  "python_version": "3.14.6",
+  "raw_train_file": "02_raw_data/PM_train.csv",
+  "raw_train_sha256": "12250a097c5d11fda027d0e025d91619c4fff1d93d482341ab456e8ad83368d0",
+  "scipy_wilcoxon_available": true,
+  "script": "55_validate_train.py",
+  "sensor_std_eps": 1e-12,
+  "shuffle_group_count": 1462,
+  "software_doi": "10.5281/zenodo.21892421",
+  "technical_report_doi": "10.5281/zenodo.21898684",
+  "temporal_shuffle_null": "Within each engine/sensor, permute the complete raw sensor sequence while preserving its values and length; recompute progressive global RPD trajectories.",
+  "test_set_used": false,
+  "truth_set_used": false,
+  "workers": 14
+}

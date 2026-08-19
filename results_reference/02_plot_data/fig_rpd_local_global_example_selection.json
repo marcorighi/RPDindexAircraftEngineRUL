@@ -1,0 +1,63 @@
+{
+  "eligible_sensor_count": 14,
+  "eligible_sensors": [
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "first_RUL": 179.0,
+  "first_cycle": 2,
+  "global_index": "RPDgep",
+  "last_RUL": 0.0,
+  "last_cycle": 181,
+  "local_index": "RPDlep",
+  "metrics": {
+    "abs_delta_late_early": {
+      "RPDgep": 0.7528460835139812,
+      "RPDlep": 0.133903504076694,
+      "global_minus_local": 0.6189425794372871
+    },
+    "abs_pearson_rul": {
+      "RPDgep": 0.8105647348064006,
+      "RPDlep": 0.3668591483925238,
+      "global_minus_local": 0.44370558641387675
+    },
+    "abs_spearman_rul": {
+      "RPDgep": 0.8237743963291048,
+      "RPDlep": 0.4145745239050587,
+      "global_minus_local": 0.40919987242404604
+    },
+    "monotonicity": {
+      "RPDgep": 0.3854748603351955,
+      "RPDlep": 0.0279329608938547,
+      "global_minus_local": 0.3575418994413408
+    },
+    "rpd_range": {
+      "RPDgep": 1.8947368421052544,
+      "RPDlep": 1.483350151362247,
+      "global_minus_local": 0.4113866907430075
+    }
+  },
+  "metrics_input": "04_results/05_tables/01_RPD_metrics_by_engine_sensor.csv",
+  "minimum_informative_engines_per_sensor": 90,
+  "number_of_cycles_plotted": 180,
+  "pdf_file": "04_results/03_figures/fig_rpd_local_global_example.pdf",
+  "plot_data_file": "04_results/02_plot_data/fig_rpd_local_global_example.csv",
+  "png_file": "04_results/04_figures_hires/fig_rpd_local_global_example.png",
+  "progressive_input": "04_results/01_indices/PM_train_RPD_progressive.csv.gz",
+  "representative_distance": 0.126208168585464,
+  "selected_engine": 35,
+  "selected_sensor": "s4",
+  "selection_method": "minimum robust multivariate distance from the median RPDlep/RPDgep engine-sensor profile"
+}

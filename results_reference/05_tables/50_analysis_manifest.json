@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-08-12T08:15:33.991466+00:00",
+  "early_late_fraction": 0.2,
+  "engine_count": 100,
+  "global_indices": [
+    "RPDgep",
+    "RPDgea",
+    "RPDgepr"
+  ],
+  "index_names": [
+    "RPDlep",
+    "RPDlea",
+    "RPDlepr",
+    "RPDgep",
+    "RPDgea",
+    "RPDgepr"
+  ],
+  "input_file": "04_results/01_indices/PM_train_RPD_progressive.csv.gz",
+  "input_sha256": "2dd15125b8908ea3e61448a6f41194f4e3f69ffc8b132d9456be340159a217a3",
+  "local_indices": [
+    "RPDlep",
+    "RPDlea",
+    "RPDlepr"
+  ],
+  "monotonicity_definition": "abs(N_inc-N_dec)/(N-1), ties included in denominator",
+  "numpy_version": "2.5.1",
+  "outputs": {
+    "local_vs_global": "04_results/05_tables/04_RPD_local_vs_global.csv",
+    "metrics_by_engine_sensor": "04_results/05_tables/01_RPD_metrics_by_engine_sensor.csv",
+    "paired_local_global": "04_results/05_tables/05_RPD_paired_local_global.csv",
+    "sensor_characteristics": "04_results/05_tables/07_sensor_characteristics.csv",
+    "sensor_ranking": "04_results/05_tables/06_RPD_sensor_ranking.csv",
+    "summary_by_index": "04_results/05_tables/03_RPD_summary_by_index.csv",
+    "summary_by_index_sensor": "04_results/05_tables/02_RPD_summary_by_index_sensor.csv"
+  },
+  "pandas_version": "2.3.3",
+  "python_version": "3.14.6",
+  "rows": 431151,
+  "scipy_wilcoxon_available": true,
+  "script": "50_analyze_train.py",
+  "sensor_count": 21,
+  "sensor_ranking_definition": "descending median abs Spearman(RPD,RUL), then median monotonicity, then Spearman sign consistency; no weighted composite score",
+  "sensor_std_eps": 1e-12,
+  "signed_monotonicity_definition": "(N_inc-N_dec)/(N-1), ties included in denominator",
+  "test_set_used": false,
+  "truth_set_used": false
+}

@@ -1,0 +1,14 @@
+# Runtime dependencies for the reproducible analysis pipeline.
+# Python 3.9 or newer is recommended.
+#
+# For the exact package versions used to generate the published results,
+# archive the environment from the final clean validation run separately
+# (for example, as results_reference/environment.txt or requirements-lock.txt).
+
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+matplotlib
+kagglehub

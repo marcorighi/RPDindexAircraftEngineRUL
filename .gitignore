@@ -1,0 +1,21 @@
+# Downloaded input data
+02_raw_data/*.csv
+
+# Generated analysis outputs
+04_results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Editors / OS
+*~
+*.swp
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
