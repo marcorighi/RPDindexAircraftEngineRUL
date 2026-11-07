@@ -1,0 +1,9 @@
+dataset,model,engines,original_premature,original_actionable,original_late,original_never,original_ever_in_window,cleanroom_premature,cleanroom_actionable,cleanroom_late,cleanroom_never,cleanroom_ever_in_window,category_same_count,first_alarm_rul_same_count,first_alarm_rul_different
+FD001,raw_age_ols,100,2,98,0,0,100,2,98,0,0,100,100,100,0
+FD001,raw_age_ols_rpd_gep,100,1,99,0,0,100,1,99,0,0,100,100,100,0
+FD002,raw_age_ols,260,21,236,3,0,260,19,238,3,0,260,258,214,46
+FD002,raw_age_ols_rpd_gep,260,6,247,4,3,257,6,247,4,3,257,260,251,9
+FD003,raw_age_ols,100,8,91,1,0,100,8,91,1,0,100,100,100,0
+FD003,raw_age_ols_rpd_gep,100,6,94,0,0,100,6,94,0,0,100,100,98,2
+FD004,raw_age_ols,249,27,215,6,1,248,29,214,6,0,249,246,232,17
+FD004,raw_age_ols_rpd_gep,249,14,228,5,2,245,13,229,5,2,245,248,219,30

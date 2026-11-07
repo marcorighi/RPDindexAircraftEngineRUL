@@ -1,0 +1,7 @@
+Repository: https://github.com/marcorighi/RPDindexAircraftEngineRUL
+Baseline branch: main
+Baseline commit: 740230b1a98658207b3eb437b5236b7c4e5b631a
+Historical release: v1.0.0 (2026-08-19)
+Historical DOI: 10.5281/zenodo.22012996
+Proposed additions: new ijphm_2026/ subtree only
+No GitHub files modified by this candidate builder.

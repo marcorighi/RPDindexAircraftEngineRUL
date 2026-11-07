@@ -1,0 +1,10 @@
+# Generated local inputs/results and private runtime — do not publish.
+.venv/
+02_raw_data/
+04_results/
+__pycache__/
+*.py[cod]
+*.log
+*.zip
+*.zip.sha256
+*.partial

@@ -1,37 +1,28 @@
 cff-version: 1.2.0
-message: "If you use this software or analysis pipeline, please cite this repository and the associated publication."
-title: "RPDindex-Based Aircraft-Engine RUL Analysis"
+message: >-
+  Cite the version-specific DOI once the v2.0.0 release is archived.
+  The historical DOI 10.5281/zenodo.22012996 identifies v1.0.0, not
+  the new IJPHM 2026 experiments.
+title: "RPDindex Aircraft-Engine Analysis: IJPHM 2026 Near-Endpoint Experiments"
 type: software
-
 authors:
   - family-names: "Righi"
     given-names: "Marco"
+    orcid: "https://orcid.org/0000-0002-1448-0960"
     email: "marco.righi@cnr.it"
     affiliation: "Institute of Clinical Physiology, National Research Council of Italy (CNR-IFC), Massa, Italy; Department of Computer Science, University of Pisa, Pisa, Italy"
-
-version: "1.0.0"
-date-released: 2026-08-19
-doi: "10.5281/zenodo.22012996"
+version: "2.0.0"
 repository-code: "https://github.com/marcorighi/RPDindexAircraftEngineRUL"
 license: BSD-3-Clause
-
 abstract: >-
-  Reproducible Python analysis pipeline for evaluating RPDindex-based local and
-  global degradation indicators and their use in remaining useful life (RUL)
-  prediction for aircraft engines using the C-MAPSS-derived Predictive
-  Maintenance Aircraft Engine dataset. The repository includes data integrity
-  checks, RPD trajectory computation, statistical validation, RUL model
-  training and validation, blind test prediction, evaluation, and manuscript
-  figure generation.
-
+  Reproducible Python pipeline and audits for retrospective near-endpoint
+  discrimination on the NASA C-MAPSS FD001--FD004 training trajectories
+  using prefix RPDgep features, nested alarm thresholds and nine-model
+  component ablation. No prospective failure-prediction validation is claimed.
 keywords:
-  - "RPDindex"
-  - "remaining useful life"
-  - "RUL prediction"
-  - "predictive maintenance"
-  - "aircraft engines"
-  - "C-MAPSS"
-  - "degradation indicators"
-  - "reliability engineering"
-  - "prognostics"
-  
+  - RPDindex
+  - C-MAPSS
+  - prognostics
+  - near-endpoint discrimination
+  - reproducibility
+# PRE-RELEASE: DOI and date-released intentionally omitted; add only after verification.
