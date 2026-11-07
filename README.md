@@ -4,10 +4,14 @@ This repository preserves **two scientifically different and independently
 reproducible protocols**. Their data sources, endpoints, software entry points,
 and release citations must not be interchanged.
 
+Research contact: **Marco Righi**, Research Staff, Institute of Clinical Physiology
+(IFC), National Research Council of Italy (CNR). Email: marco.righi@cnr.it;
+ORCID: https://orcid.org/0000-0002-1448-0960.
+
 | Protocol | Research goal | Input data | Entry point |
 |---|---|---|---|
 | **Historical v1.0.0 (August 2026)** | Remaining-useful-life (RUL) analysis, model validation, and separate test-set evaluation | Kaggle *Predictive Maintenance: Aircraft Engine* (`PM_train.csv`, `PM_test.csv`, `PM_truth.csv`) | `03_code/00_run_rpd_pipeline.sh` and the historical `03_code/50_...` through `85_...` programs |
-| **IJPHM 2026 / candidate v2.0.0** | Retrospective discrimination of cycles within 30 cycles of a known end-of-life trajectory, nested alarm thresholds, and nine-model RPD component ablation | Original NASA C-MAPSS training trajectories **FD001, FD002, FD003, FD004** (709 engines) | `ijphm_2026/scripts/replay.sh` |
+| **IJPHM 2026 / released v2.0.0** | Retrospective discrimination of cycles within 30 cycles of a known end-of-life trajectory, nested alarm thresholds, and nine-model RPD component ablation | Original NASA C-MAPSS training trajectories **FD001, FD002, FD003, FD004** (709 engines) | `ijphm_2026/scripts/replay.sh` |
 
 **IJPHM 2026 reproducibility:** Start with the dedicated
 [`ijphm_2026/README.md`](ijphm_2026/README.md). That document explains how to
@@ -26,8 +30,8 @@ bash scripts/replay.sh all both
 This later study is **not prospective failure prediction** and does not include
 independent nonfailure controls. The historical v1.0.0 repository DOI
 `10.5281/zenodo.22012996` **does not identify** the new IJPHM 2026 source
-code; a version-specific DOI will be recorded only after a new release is
-published and deposited. Neither workflow redistributes NASA source data.
+code; the version-specific DOI of v2.0.0 is
+`10.5281/zenodo.24038717`. Neither workflow redistributes NASA source data.
 
 The material in the next sections (`02_raw_data/`, `03_code/`, the Kaggle
 `download_data.py`, and `results_reference/`) documents the **historical v1.0.0
@@ -131,7 +135,7 @@ separately:
 - Software DOI: `10.5281/zenodo.21892421`
 - Technical report DOI: `10.5281/zenodo.21898684`
 
-For the new IJPHM 2026 software candidate, consult the root `CITATION.cff`; the two DOIs above identify the previously archived optimized implementation.
+For the IJPHM 2026 v2.0.0 release, consult the root `CITATION.cff` and the archived version DOI `10.5281/zenodo.24038717`; the two DOIs above identify the previously archived optimized implementation.
 
 ## License
 
@@ -145,4 +149,4 @@ The reproducible analysis software and reference results are archived on Zenodo:
 - RPDindexOptimized software DOI: `10.5281/zenodo.21892421`
 - RPDindexOptimized technical report DOI: `10.5281/zenodo.21898684`
 
-The root `CITATION.cff` describes the IJPHM 2026 v2.0.0 candidate. For the historical analysis, cite its v1.0.0 DOI given above.
+The root `CITATION.cff` describes the IJPHM 2026 v2.0.0 release (DOI `10.5281/zenodo.24038717`). For the historical analysis, cite its v1.0.0 DOI given above.
