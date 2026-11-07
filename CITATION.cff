@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: >-
-  Cite the version-specific DOI once the v2.0.0 release is archived.
-  The historical DOI 10.5281/zenodo.22012996 identifies v1.0.0, not
-  the new IJPHM 2026 experiments.
+  If you use the IJPHM 2026 RPDindex software in research, please cite
+  version 2.0.0 using its Zenodo DOI: 10.5281/zenodo.24038717.
+  The historical v1.0.0 has a distinct DOI: 10.5281/zenodo.22012996.
 title: "RPDindex Aircraft-Engine Analysis: IJPHM 2026 Near-Endpoint Experiments"
 type: software
 authors:
@@ -12,6 +12,8 @@ authors:
     email: "marco.righi@cnr.it"
     affiliation: "Institute of Clinical Physiology, National Research Council of Italy (CNR-IFC), Massa, Italy; Department of Computer Science, University of Pisa, Pisa, Italy"
 version: "2.0.0"
+date-released: 2026-11-07
+doi: 10.5281/zenodo.24038717
 repository-code: "https://github.com/marcorighi/RPDindexAircraftEngineRUL"
 license: BSD-3-Clause
 abstract: >-
@@ -25,4 +27,3 @@ keywords:
   - prognostics
   - near-endpoint discrimination
   - reproducibility
-# PRE-RELEASE: DOI and date-released intentionally omitted; add only after verification.
